@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Creator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@600;800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/ico/box-2-16.ico">
+</head>
+<body>
+    <form id="formObject" action="" method="get">
+        <div>
+            <h1>Object Creator</h1>
+        </div>
+        <div>
+            <input type="text" placeholder="Object Name" name="Name" required>
+        </div>
+        <div class="my">
+            <h3>Add object attributes</h3>
+        </div>
+        <div id="attributes" class="my-10">
+            <div id="newAttributes">
+                <div class="my">
+                    <input name="AttributeName" type="text" placeholder="Attribute Name" required>
+                </div>
+                <div class="my">
+                    <input name="AttributeValue" type="text" placeholder="Attribute Value" required>
+                </div>
+            </div>
+        </div>
+        <div class="my-10">
+            <button id="btnMore" onclick="moreAttributes()" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="my-10">
+            <button id="btnSubmit" type="submit">Create</button>
+        </div>
+    </form>
+</body>
+<script src="index.js"></script>
+</html>
